@@ -101,12 +101,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# No mac stuff
-.DS_Store
 
 # No vscode stuff
 .vscode

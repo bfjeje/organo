@@ -6,16 +6,6 @@ import {useState} from "react";
 
 const Formulario = (props) => {
 
-    const teams = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Innovação e Gestão'
-    ]
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -55,7 +45,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true}
                     label="Time"
-                    itens={teams}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
                 {/*Desta forma podemos enviar imagens e não so strings, como nos parametros*/}
